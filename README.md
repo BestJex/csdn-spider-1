@@ -28,6 +28,10 @@ csdn.spider("ds19991999", "cookie.txt")
 
 * 示例爬取博文效果： [ds19991999 的博文](https://github.com/ds19991999/csdn-spider/tree/master/blog/ds19991999)
 
+## 注意
+
+在一级目录下新建cookies.txt，method不要有:，以及其它key值不要有:，不然会报错：ValueError: Invalid header name b，而且url地址也要对，不然会报错：requests.exceptions.ConnectionError: HTTPSConnectionPool(host='', port=443)
+
 ## LICENSE
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
