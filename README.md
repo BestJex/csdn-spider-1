@@ -30,7 +30,11 @@ csdn.spider("ds19991999", "cookie.txt")
 
 ## 注意
 
-在一级目录下新建cookies.txt，method不要有:，以及其它key值不要有:，不然会报错：ValueError: Invalid header name b，而且url地址也要对，不然会报错：requests.exceptions.ConnectionError: HTTPSConnectionPool(host='', port=443)
+1、要用python3，不然会报错： def get_headers(cookie_path:str):     SyntaxError: invalid syntax
+
+2、在一级目录下新建cookies.txt，method不要有:，以及其它key值不要有:，不然会报错：ValueError: Invalid header name b
+
+3、url地址也要正确，不然会报错：requests.exceptions.ConnectionError: HTTPSConnectionPool(host='', port=443)
 
 ## LICENSE
 
